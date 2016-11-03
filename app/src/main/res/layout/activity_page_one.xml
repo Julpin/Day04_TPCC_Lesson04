@@ -12,16 +12,6 @@
     android:background="#76a1ce"
     >
 
-    <TextView
-        android:id="@+id/page_one_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Page One"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="213dp"
-        android:textColor="@android:color/white" />
-
     <Button
         android:id="@+id/pageone_next"
         android:text="Next"
@@ -30,11 +20,22 @@
         android:elevation="10dp"
         android:textColorHint="@color/colorAccent"
         android:backgroundTint="?attr/colorControlHighlight"
-        android:background="@android:color/white"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="39dp"
         android:textColor="@android:color/white"
+        android:background="?attr/colorControlHighlight"
  />
+
+    <TextView
+        android:id="@+id/page_one_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Page One"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/pageone_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="162dp"
+        android:textSize="30sp" />
 </RelativeLayout>
